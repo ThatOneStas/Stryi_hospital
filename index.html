@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
@@ -14,7 +14,9 @@
     <header class="header">
         <div class="header__red_line"></div>
         <div class="header__green_line"></div>
-        <img class="header__logo" src="imgs/logo.png" alt="">
+        <a href="index.html">
+            <img class="header__logo" src="imgs/logo.png" alt="">
+        </a>
         <div class="header__above_menu">
             <div class="header__above_menu_location">
                 <img class="header__above_menu_location_img" src="imgs/carbon_location-filled.png" alt="">
@@ -47,6 +49,73 @@
         </nav>
     </header>
 
+
+    <main>
+        <section class="hero">
+            <nav class="hero__nav">
+                <ul class="hero__nav_list">
+                    <li class="hero__nav_list_item">
+                        <a href="">
+                            <img class="hero__nav_list_item_img" src="imgs/bx_calendar.png" alt="">
+                            <span class="hero__nav_list_item_link" href="">Запис на прийом</span>
+                        </a>
+                    </li>
+                    <li class="hero__nav_list_line"></li>
+                    <li class="hero__nav_list_item">
+                        <a href="">
+                            <img class="hero__nav_list_item_img" src="imgs/bi_star-half.png" alt="">
+                            <span class="hero__nav_list_item_link" href="">Оцінити якість наданих послуг</span>
+                        </a>
+                    </li>
+                    <li class="hero__nav_list_line"></li>
+                    <li class="hero__nav_list_item">
+                        <a href="">
+                            <img class="hero__nav_list_item_img" src="imgs/healthicons_pill-1.png" alt="">
+                            <span class="hero__nav_list_item_link" href="">Доступні ліки</span>
+                        </a>
+                    </li>
+                    <li class="hero__nav_list_line"></li>
+                    <li class="hero__nav_list_item">
+                        <a href="">
+                            <img class="hero__nav_list_item_img" src="imgs/ri_auction-fill.png" alt="">
+                            <span class="hero__nav_list_item_link" href="">Публічні закупівлі</span>
+                        </a>
+                    </li>
+                    <li class="hero__nav_list_line"></li>
+                    <li class="hero__nav_list_item">
+                        <a href="">
+                            <img class="hero__nav_list_item_img" src="imgs/bi_vector-pen.png" alt="">
+                            <span class="hero__nav_list_item_link" href="">Декларація з лікарем</span>
+                        </a>
+                    </li>
+                    <li class="hero__nav_list_line"></li>
+                    <li class="hero__nav_list_item">
+                        <a href="">
+                            <img class="hero__nav_list_item_img" src="imgs/ic_outline-schedule.png" alt="">
+                            <span class="hero__nav_list_item_link" href="">Графік роботи поліклініки</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hero__slider">
+                <div class="hero__slider_item" style="background: url(imgs/image\ 2.png), lightgray 50% / cover no-repeat;">
+                    1
+                </div>
+                <div class="hero__slider_item" style="background: url(imgs/image\ 2.png), lightgray 50% / cover no-repeat;">
+                    2
+                </div>
+                <div class="hero__slider_item" style="background: url(imgs/image\ 2.png), lightgray 50% / cover no-repeat;">
+                    3
+                </div>
+                <div class="hero__slider_item" style="background: url(imgs/image\ 2.png), lightgray 50% / cover no-repeat;">
+                    4
+                </div>
+            </div>
+            <img class="hero__img" src="imgs/cil_medical-cross.png" alt="">
+        </section>
+    </main>
+
+
     <footer class="footer">
         <img class="footer__logo" src="imgs/logo_white.png" alt="">
         <nav class="footer__menu">
@@ -77,6 +146,8 @@
             Використання матеріалів сайту дозволяється лише з посиланням на джерело        </h1>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="scripts/slick.min.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 </html>
