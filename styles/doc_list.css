@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* HEADER START */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -12,6 +21,7 @@
     flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 23px;
 }
 
 .header__red_line {
@@ -167,7 +177,9 @@
 }
 
 /* -------------------------------------------------------------------------------------------- */
+/* HEADER END */
 /* -------------------------------------------------------------------------------------------- */
+/* FOOTER START */
 /* -------------------------------------------------------------------------------------------- */
 
 .footer {
@@ -318,3 +330,183 @@
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER END */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+.title {
+    color: #000;
+
+    /* h1 */
+    font-family: 'Inter';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+.input {
+    width: 100%;
+    height: fit-content;
+    padding: 0 118px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 11px;
+}
+
+.input__select {
+    background-image: url('/imgs/Group.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 336px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #EDEDED;
+
+    color: #878787;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    padding-left: 19px;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+.input__search {
+    background-image: url('/imgs/search\ \(2\)\ 1.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 898px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #EDEDED;
+
+    color: #878787;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+.radio {
+    width: 100%;
+    height: fit-content;
+    padding: 0 118px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.radio__label {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-left: 2px;
+}
+
+.radio__btn {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    background-color: #32C190;
+    margin: 0;
+    margin-left: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+.docs {
+    width: 1205px;
+    height: fit-content;
+    flex-shrink: 0;
+    margin: 0 auto;
+    margin-bottom: 114px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 40px;
+    column-gap: 21px;
+}
+
+.docs__item {
+    width: 286px;
+    height: 350px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #4DAF8A;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.docs__item:hover {
+    background: #3b876a;
+}
+
+.docs__item_img {
+    width: 100%;
+    height: 267px;
+    flex-shrink: 0;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.docs__item_name {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.docs__item_profile {
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
