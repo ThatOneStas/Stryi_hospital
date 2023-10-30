@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"><meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="styles/extra_survey.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__red_line"></div>
+        <div class="header__green_line"></div>
+        <a href="index.html">
+            <img class="header__logo" src="imgs/logo.png" alt="">
+        </a>
+        <div class="header__above_menu">
+            <div class="header__above_menu_location">
+                <img class="header__above_menu_location_img" src="imgs/carbon_location-filled.png" alt="">
+                <span class="header__above_menu_location_text">82400, Львівська обл., м. Стрий, вул. Ольги Басараб, буд. 15</span>
+                <a class="header__above_menu_location_link" href="schedule.html">графік роботи</a>
+            </div>
+            <div class="header__above_menu_phone">
+                <img class="header__above_menu_phone_img" src="imgs/el_phone-alt.png" alt="">
+                <span class="header__above_menu_phone_text">(03245) 7-03-02</span>
+            </div>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu_list">
+                <li>
+                    <a class="header__menu_list_item" href="">Реєстратура</a>
+                </li>
+                <li>
+                    <a class="header__menu_list_item" href="">Про лікарню</a>
+                </li>
+                <li>
+                    <a class="header__menu_list_item" href="">Пацієнту</a>
+                </li>
+                <li>
+                    <a class="header__menu_list_item" href="">Оцініть роботу</a>
+                </li>
+                <li>
+                    <a class="header__menu_list_item" href="">Зворотній звʼязок</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <form class="form">
+            <h1 class="form__title">Чи був ввічливий з Вами персонал?</h1>
+            <h2 class="form__sub_title">Оцініть ввічливість персоналу нашої лікарні</h2>
+            <div class="form__stars">
+                <img onclick="changeStars(1)" src="imgs/ant-design_star-filled.png" alt="" class="form__stars_item active">
+                <img onclick="changeStars(2)" src="imgs/ant-design_star-filled.png" alt="" class="form__stars_item">
+                <img onclick="changeStars(3)" src="imgs/ant-design_star-filled.png" alt="" class="form__stars_item">                
+                <img onclick="changeStars(4)" src="imgs/ant-design_star-filled.png" alt="" class="form__stars_item">
+                <img onclick="changeStars(5)" src="imgs/ant-design_star-filled.png" alt="" class="form__stars_item">
+            </div>
+            <textarea class="form__textarea" placeholder="Коментар (необовʼязково)" name="" id="" cols="30" rows="10"></textarea>
+            <input class="form__checkbox" type="checkbox">
+            <label class="form__label" for="form__checkbox">Я хочу отримати офіційну відповідь на email</label>
+            <input class="form__submit" type="submit" value="НАДІСЛАТИ">
+        </form>
+
+    </main>
+
+
+    <footer class="footer">
+        <img class="footer__logo" src="imgs/logo_white.png" alt="">
+        <nav class="footer__menu">
+            <ul class="footer__menu_list_1">
+                <li><a class="footer__menu_item" href="">Підрозділи</a></li>
+                <li><a class="footer__menu_item" href="">Графіки роботи</a></li>
+                <li><a class="footer__menu_item" href="">Декларація з лікарем</a></li>
+                <li><a class="footer__menu_item" href="">Доступні ліки</a></li>
+                <li><a class="footer__menu_item" href="">Про поліклініку</a></li>
+            </ul>
+            <ul class="footer__menu_list_2">
+                <li><a class="footer__menu_item" href="">Публічні закупівлі</a></li>
+                <li><a class="footer__menu_item" href="">Профспілка медичних працівників</a></li>
+                <li><a class="footer__menu_item" href="">Міські цільові соціальні програми</a></li>
+            </ul>
+
+
+        </nav>
+        <div class="footer__facebook">
+            <span class="footer__facebook_title">Тримайте руку на пульсі</span>
+            <span class="footer__facebook_sub_title">слідкуйте за оновленнями в соц. мережах</span>
+        </div>
+        <img class="footer__menu_fb" src="imgs/bi_facebook.png" alt="">
+        <img class="footer__menu_tg" src="imgs/akar-icons_telegram-fill.png" alt="">
+        <div class="footer__line"></div>
+        <h1 class="footer__bottom_text">
+            © 2022  комунального некомерційного підприємства Стрийської міської ради 
+            Використання матеріалів сайту дозволяється лише з посиланням на джерело        </h1>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="scripts/extra_survey.js"></script>
+</body>
+</html>
