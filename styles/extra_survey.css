@@ -470,6 +470,7 @@ body {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
     transition: 0.4s;
 }
 
